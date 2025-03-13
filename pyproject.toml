@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dertour"
+version = "0.1.0"
+description = "Sample application with python poetry and build using buildpacks."
+authors = ["Clemens Wältken <clemens.waltken@microsoft.com>"]
+readme = "README.md"
+package-mode = false
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gunicorn = "^23.0.0"
+uvicorn = "^0.34.0"
+fastapi = "^0.115.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
